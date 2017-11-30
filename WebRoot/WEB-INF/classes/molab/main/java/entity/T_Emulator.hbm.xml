@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="molab.main.java.entity">
+	<class lazy="false" name="T_Emulator" table="T_Emulator">
+		<id name="id" type="java.lang.Integer">
+			<column length="8" name="ID" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="server_id" type="java.lang.Integer">
+			<column name="SERVER_ID" />
+		</property>
+		<property name="serialNumber" type="java.lang.String">
+			<column name="SERIALNUMBER" />
+		</property>
+		<property name="manufacturer" type="java.lang.String">
+			<column name="MANUFACTURER" />
+		</property>
+		<property name="model" type="java.lang.String">
+			<column name="MODEL" />
+		</property>
+		<property name="os" type="java.lang.String">
+			<column name="OS" />
+		</property>
+		<property name="width" type="java.lang.Integer">
+			<column name="WIDTH" />
+		</property>
+		<property name="height" type="java.lang.Integer">
+			<column name="HEIGHT" />
+		</property>
+		<property name="dpi" type="java.lang.String">
+			<column name="DPI" />
+		</property>
+		<property name="totalClicks" type="java.lang.Integer">
+			<column name="TOTALCLICKS" />
+		</property>
+		<property name="monthClicks" type="java.lang.Integer">
+			<column name="MONTHCLICKS" />
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="STATE" />
+		</property>
+	</class>
+</hibernate-mapping>

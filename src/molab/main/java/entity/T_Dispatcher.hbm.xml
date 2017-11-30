@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="molab.main.java.entity">
+	<class lazy="false" name="T_Dispatcher" table="T_Dispatcher">
+		<id name="id" type="java.lang.Integer">
+			<column length="8" name="ID" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="developer_id" type="java.lang.Integer">
+			<column name="DEVELOPER_ID" />
+		</property>
+		<property name="application_id" type="java.lang.Integer">
+			<column name="APPLICATION_ID" />
+		</property>
+		<property name="time" type="java.lang.Long">
+			<column name="TIME" />
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="STATE" />
+		</property>
+	</class>
+</hibernate-mapping>

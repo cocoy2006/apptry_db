@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="molab.main.java.entity">
+	<class lazy="false" name="T_Server" table="T_Server">
+		<id name="id" type="java.lang.Integer">
+			<column length="8" name="ID" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="ipAddress" type="java.lang.String">
+			<column name="IPADDRESS" />
+		</property>
+		<property name="port" type="java.lang.Integer">
+			<column name="PORT" />
+		</property>
+	</class>
+</hibernate-mapping>
